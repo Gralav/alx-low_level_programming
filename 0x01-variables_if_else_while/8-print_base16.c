@@ -1,22 +1,19 @@
 #include <stdio.h>
 
 /**
- * main- Entry point
- * @void: Null value
- * Description: Print numbers of base 16
- * Return: Zero value
+ * main - Entry point
+ * Return: 0
  */
 
 int main(void)
 {
-	int d;
-	char low;
+	int i;
 
-	for (d = '0'; d <= '9'; d++)
-		putchar(d);
-	for (low = 'a'; low <= 'f'; low++)
-		putchar(low);
-	        putchar('\n');
-
+	for (i = 48; i < 58; i++)
+		putchar(i);
+	for (i = 'a'; i <= 'f'; i++)
+		putchar(i);
+	putchar('\n');
 	return (0);
 }
+
