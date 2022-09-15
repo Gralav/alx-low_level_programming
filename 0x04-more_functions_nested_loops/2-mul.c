@@ -1,10 +1,7 @@
-#include "main.h"
-
 /**
- * mul - multiply two nums together
+ *mul - multiply two nums together
  *
  * @a: integer to multiply by b
- * 
  * @b: integer to multiply by a
  *
  * Return: result of a*b
