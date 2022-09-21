@@ -2,42 +2,20 @@
 
 /**
  * _strcmp - compares two strings
- * @s1: first string
- * @s2: second string
- * Return: -15 if s1 < s2
- *          0  if s1 = s2
- *          15 if s1 > s2
+ * @s1: A pointer to a character that will be changed
+ * @s2: A pointer to a character that will also be changed/modified/updated
+ * Return: dest
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	int s1Length = 0, s2Length = 0;
-	int rtrnValNeg = -10;
-	int rtrnValPos = 10;
-	int smallerLength = 0;
+	char *str_one = s1;
+	char *str_two = s2;
 
-	while (*(s1 + s1Length) != '\0')
-		s1Length++;
-	while (*(s2 + s2Length) != '\0')
-		s2Length++;
-
-	smallerLength = (s1Length < s2Length) ? s1Length : s2Length;
-	rtrnValNeg += -(smallerLength);
-	rtrnValPos += smallerLength;
-
-	if (s1Length < s2Length)
-		return (rtrnValNeg);
-	if (s1Length > s2Length)
-		return (rtrnValPos);
-
-	while (*s1) /*same length, so loop through one and check both */
+	while (*str_one != '\0' && *str_two != '\0' && *str_one == *str_two)
 	{
-		if (*s1 < *s2)
-			return (rtrnValNeg);
-		if (*s1 > *s2)
-			return (rtrnValPos);
-		s1++;
-		s2++;
+		str_one++;
+		str_two++;
 	}
-	return (0); /* equal */
+	return (*str_one - *str_two);
 }
