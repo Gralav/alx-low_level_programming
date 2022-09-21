@@ -23,9 +23,9 @@ int separator(char c)
 		case ')':
 		case '{':
 		case '}':
-			return (1);
+		return (1);
 		default:
-			return (0);
+		return (0);
 	}
 }
 /**
