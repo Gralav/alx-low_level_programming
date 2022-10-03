@@ -3,6 +3,7 @@
 /**
  * create_array - creates an array of a specific size and fills with a char.
  * @size : the Size of the array to create.
+ * @c :charcter
  * Return: An array of characters.
  */
 
