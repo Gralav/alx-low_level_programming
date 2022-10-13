@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include "function_pointers.h"
+
+
 /**
  * int_index - Search for the index of given number.
  * @array: array of elements
