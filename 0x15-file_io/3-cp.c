@@ -66,6 +66,7 @@ void closer(int arg_files)
 		dprintf(2, "Error: Can't close fd %d\n", arg_files);
 		exit(100);
 	}
+
 }
 
 
